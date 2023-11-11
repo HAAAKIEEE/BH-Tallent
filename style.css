@@ -1,0 +1,233 @@
+* {
+    font-family: "Montserrat";
+}
+html,body{
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 50px;
+    margin: 0 0 16px 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    margin: 0 0 16px 0;
+    color: #979797;
+}
+
+section{
+    padding: 62px 108px;
+}
+
+nav>a {
+    margin-left: 10px;
+}
+
+nav > a:hover {
+    color: rgb(246, 176, 46) ;
+}
+
+#header{
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 108px;
+}
+#header h1{
+    margin: 0;
+}
+#header p{
+    margin-bottom: 32px;
+}
+#header h1 span{
+    color:  rgb(253, 171, 18);
+}
+/* landing */
+#landing{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    column-gap: 166px;
+}
+
+#landing p {
+    margin-top: 32px;
+    margin-bottom: 102px;
+
+}
+
+#landing > div{
+    width: 50%;
+}
+
+.btn {
+
+    background-color: rgb(246, 176, 46);
+    color: white;
+    padding: 8px 24px
+}
+
+
+.btn-more {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    margin-right: 15px;
+    border: 2px solid rgb(253, 171, 18);
+}
+
+.btn:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+     border: 1px solid rgb(253, 171, 18);
+}
+
+
+/* landing end */
+
+/* about  */
+#about{
+    justify-content:space-between ;
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+}
+#about>div{
+    width: 50%;
+}
+#about-stat{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    margin-top: 70px;
+}
+#about-stat > div > div{
+    width: 70px;
+    height: 10px;
+    background-color: orange;
+    margin-bottom: 10px;
+}
+.about-stat-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/* about end */
+.sevice-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sevice-detail{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 20px;
+    column-gap: 128px;
+}
+.sevice-detail-item{
+   box-shadow: 3px 4px 4px silver;
+   height: 500px;
+
+}
+.sevice-detail-item img{ 
+   width: 100%;
+
+}
+.sevice-detail-item h2{ 
+    padding: 0 16px;
+
+}
+.sevice-detail-item p{
+    font-size: 14px;
+    padding: 0 16px;
+}
+
+/* contact */
+.contact-detail{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 72px;
+    column-gap: 3px;
+}
+.form-grub{
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 32px;
+    grid-template-areas:"name subject"
+                        "email phone"
+                        "pesan pesan" ;
+}
+#inp-name{
+    grid-area: name;
+}
+#inp-subject{
+    grid-area: subject;
+}
+#inp-email{
+    grid-area: email;
+}
+#inp-phone{
+    grid-area: phone;
+}
+#inp-pesan{
+    grid-area: pesan;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid orange;
+    padding: 60px 92px;
+
+}
+
+form button{
+    border: none;
+}
+
+.input-grub{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+}
+.input-grub input{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    font-size: 20px;
+}
+.input-grub label{
+    font-weight: 700;
+    margin-bottom: 16px;
+    font-size: 20px;
+}
+/* .input-grub input:hover{
+    border-bottom: 2px solid rgb(253, 171, 18);
+} */
+
+
+/* footer */
+footer{
+    padding: 16px 128px;
+    background-color: orange;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p{
+    color: white;
+}
+
+
